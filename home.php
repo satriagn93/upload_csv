@@ -8,22 +8,24 @@
 	<table id="example" class="display" style="width:100%">
 		<thead>
 			<tr>
-				<th>ID</th>
+				<th>NIK</th>
 				<th>First Name</th>
 				<th>Last Name</th>
-				<th>Address</th>
+				<th>Nomor HP</th>
+				<th>Email</th>
 			</tr>
 		</thead>
 		<tbody>
 			<?php
 			include 'koneksi.php';
-			$employee = mysqli_query($koneksi, "select * from mdl_coba order by id desc");
+			$employee = mysqli_query($koneksi, "select * from mdl_user order by id desc");
 			while ($row = mysqli_fetch_array($employee)) {
 				echo "<tr>
-		            <td>" . $row['id'] . "</td>
+		            <td>" . $row['idnumber'] . "</td>
 		            <td>" . $row['firstname'] . "</td>
 		            <td>" . $row['lastname'] . "</td>
-		            <td>" . $row['address'] . "</td>
+		            <td>" . $row['phone1'] . "</td>
+		            <td>" . $row['email'] . "</td>
 		        </tr>";
 			}
 			?>

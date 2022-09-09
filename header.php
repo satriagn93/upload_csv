@@ -136,10 +136,10 @@
         }
 
         .header-fixed {
-            background-color: #0b2f53;
+            background-color: #282A35;
             box-shadow: 0 1px 1px #ccc;
             padding: 20px 40px;
-            height: 80px;
+            height: 100px;
             color: #ffffff;
             box-sizing: border-box;
             top: -100px;
@@ -168,7 +168,7 @@
             float: left;
             font-family: "Times New Roman", Times, serif;
             line-height: 40px;
-            font-size: 20px;
+            font-size: 25px;
             margin: 0;
         }
 
@@ -327,7 +327,7 @@
 <body>
     <header class="header-fixed">
         <div style="margin-left: 5px;" class="header-limiter">
-            <h1> Online Training Upload CSV </h1>
+            <h1> Optik Melawai E-Learning, Upload CSVs </h1>
             <nav>
                 <a href="index.php"><b>Home</b></a>
                 <a href="index.php?menu=user&aksi=import"><b>Upload</b></a>
